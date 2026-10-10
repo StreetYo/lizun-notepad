@@ -1,0 +1,57 @@
+.notepad {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  padding-top: 4px;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 0 2px;
+}
+
+.status {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.status.error {
+  color: #ff453a;
+}
+
+#note {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: var(--lz-card);
+  color: var(--lz-text);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.45;
+  outline: none;
+  resize: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--lz-card-raised) transparent;
+  user-select: text;
+  cursor: text;
+}
+
+#note.mono {
+  font-family: 'Cascadia Mono', Consolas, 'Courier New', monospace;
+}
+
+#note::placeholder {
+  color: var(--lz-text-tertiary);
+}
+
+#note:focus {
+  border-color: var(--lz-accent);
+}

@@ -1,0 +1,48 @@
+{
+  "id": "lizun.notepad",
+  "name": "Notepad",
+  "version": "1.0.0",
+  "author": "Lizun",
+  "description": "A note you can write and edit right in the island",
+  "entry": "index.html",
+  "width": 280,
+  "permissions": ["storage"],
+  "settings": [
+    {
+      "key": "fontSize",
+      "type": "number",
+      "label": "Text size",
+      "default": 13,
+      "min": 11,
+      "max": 20,
+      "unit": "px"
+    },
+    {
+      "key": "monospace",
+      "type": "toggle",
+      "label": "Monospace font",
+      "description": "Letters of the same width, handy for code and tables.",
+      "default": false
+    },
+    {
+      "key": "spellcheck",
+      "type": "toggle",
+      "label": "Check spelling",
+      "default": false
+    }
+  ],
+  "locales": {
+    "ru": {
+      "name": "Блокнот",
+      "description": "Заметка, которую можно писать и править прямо в острове",
+      "settings": {
+        "fontSize": { "label": "Размер текста", "unit": "пкс" },
+        "monospace": {
+          "label": "Моноширинный шрифт",
+          "description": "Буквы одной ширины, удобно для кода и таблиц."
+        },
+        "spellcheck": { "label": "Проверять орфографию" }
+      }
+    }
+  }
+}
